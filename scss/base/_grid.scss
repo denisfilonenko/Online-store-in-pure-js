@@ -7,14 +7,17 @@
   flex-wrap: wrap;
   align-items: center;
 }
+.col-1, .col-2, .col-5 {
+  @include flex;
+}
 .col-1 {
-  @include item(1);
+  @include size(1);
 }
 .col-2 {
-  @include item(2);
+  @include size(2);
 }
 .col-5 {
-  @include item(5);
+  @include size(5);
 }
 
 ul, li {

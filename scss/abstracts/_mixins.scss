@@ -4,10 +4,12 @@
   background: -o-linear-gradient($grad1, $grad2);
   background: linear-gradient($grad1, $grad2);  
 }
-@mixin item($columns) {
+@mixin flex {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+}
+@mixin size($columns) {
   width: calc(100% / 12 * #{$columns} - 20px)
 }
 @mixin centralize {
