@@ -1,0 +1,47 @@
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-nav {
+  background-color: $gray_bg;
+  font-size: 12px;
+  line-height: 20px;
+
+  .row {
+    justify-content: space-between;
+  }
+  &__list {
+    margin-left: -17px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__login {
+    @include centralize;
+    justify-content: center;
+    width: 124px;
+    height: 50px;
+    border: none;
+    margin-left: auto;
+    background-color: $orange;
+    font-family: 'Myriad Pro';
+    color: $white;
+    cursor: pointer;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    @include centralize;
+    color: #c3c3c3;
+    text-decoration: none;
+    height: 50px;
+    padding: 0 14px;
+    margin: 0 4px;
+  }
+  .active {
+    color: $white;
+    border-bottom: 2px solid $yellow;
+    box-sizing: border-box;
+  }
+}

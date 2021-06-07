@@ -1,0 +1,130 @@
+@import url("/css/fonts.css");
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% / 12 * 1 - 20px);
+}
+
+.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% / 12 * 2 - 20px);
+}
+
+.col-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(100% / 12 * 5 - 20px);
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-nav {
+  background-color: #696969;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.header-nav .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav__list {
+  margin-left: -17px;
+}
+
+.header-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 124px;
+  height: 50px;
+  border: none;
+  margin-left: auto;
+  background-color: #ff8900;
+  font-family: 'Myriad Pro';
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header-nav__login img {
+  margin-right: 10px;
+}
+
+.header-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #c3c3c3;
+  text-decoration: none;
+  height: 50px;
+  padding: 0 14px;
+  margin: 0 4px;
+}
+
+.header-nav .active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffc925;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */

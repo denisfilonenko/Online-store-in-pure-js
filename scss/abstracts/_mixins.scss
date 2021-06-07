@@ -1,0 +1,16 @@
+@mixin gradient { 
+  background: -webkit-linear-gradient($grad1, $grad2);
+  background: -moz-linear-gradient($grad1, $grad2);
+  background: -o-linear-gradient($grad1, $grad2);
+  background: linear-gradient($grad1, $grad2);  
+}
+@mixin item($columns) {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: calc(100% / 12 * #{$columns} - 20px)
+}
+@mixin centralize {
+  display: flex;
+  align-items: center;
+}

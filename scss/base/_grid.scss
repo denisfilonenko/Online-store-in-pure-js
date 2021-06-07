@@ -1,0 +1,24 @@
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.col-1 {
+  @include item(1);
+}
+.col-2 {
+  @include item(2);
+}
+.col-5 {
+  @include item(5);
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
