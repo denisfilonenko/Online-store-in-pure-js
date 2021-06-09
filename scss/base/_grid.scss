@@ -1,14 +1,19 @@
 .container {
   max-width: 1360px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 0;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0 -10px;
 }
-.col-1, .col-2, .col-5 {
+div[class*="col"] {
   @include flex;
+  margin: 0 10px;
+  box-sizing: border-box;
 }
 .col-1 {
   @include size(1);
@@ -16,12 +21,59 @@
 .col-2 {
   @include size(2);
 }
+.col-3 {
+  @include size(3);
+}
+.col-4 {
+  @include size(4);
+}
 .col-5 {
   @include size(5);
+}
+.col-6 {
+  @include size(6);
+}
+.col-7 {
+  @include size(7);
+}
+.col-8 {
+  @include size(8);
+}
+.col-9 {
+  @include size(9);
+}
+.col-10 {
+  @include size(10);
+}
+.col-11 {
+  @include size(11);
+}
+.col-12 {
+  @include size(12);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;   
+  -khtml-user-select: none;
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none;
 }
 
 ul, li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  color: $white;
+}
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
