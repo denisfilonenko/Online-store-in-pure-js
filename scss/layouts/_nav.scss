@@ -28,11 +28,11 @@ div.menu {
     padding-left: 23px;
   }
   &__item {
-    height: 56px;
+    height: 55px;
     padding-left: 40px;
     padding-right: 34px;
     box-sizing: border-box;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #f1f1f1;
     border-top: none;
     @include centralize;
     justify-content: space-between;
@@ -129,7 +129,7 @@ div.menu {
   }
   &__filters {
     background-color: $gray_bg;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
 
     .row {
       padding: 24px 32px 0 36px;
@@ -241,6 +241,10 @@ div.form__select-box {
     color: $gray_bg;
   }
 }
+div.first_item {
+  height: 66px;
+  padding-top: 12px;
+}
 .opened {
   display: block;
   z-index: 2;
@@ -304,6 +308,8 @@ div.price {
 }
 .button-clear {
   background-color: #ff4800;
+  @include flex;
+  justify-content: center;
 
   img {
     margin-right: 10px;

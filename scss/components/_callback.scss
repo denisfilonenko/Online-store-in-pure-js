@@ -1,0 +1,73 @@
+.callback {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, .8);
+
+  &__container {
+    width: 378px;
+    box-sizing: border-box;
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 32vh;
+    left: 39.5vw;
+    background-color: $white;
+    padding: 35px 41px 37px 46px;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: 'Roboto Bold';
+    font-size: 24px;
+    color: $main_text;
+    margin-bottom: 33px;
+  } 
+
+  .cross {
+    position: absolute;
+    right: -45px;
+    top: -46px;
+    cursor: pointer;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: $main_text;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  &__input {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  input {
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 14px;
+    box-sizing: border-box;
+  }
+  input::placeholder {
+    color: #9c9c9c;
+  }
+
+  button {
+    width: 210px;
+    height: 50px;
+    font-size: 14px;
+    background-color: $orange;
+    margin: 0 auto;
+  }
+}

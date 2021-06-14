@@ -158,13 +158,13 @@ function addProduct(product) {
         </button>
       </div>
       <div class="card__actions">
-        <div class="action-compare">
+        <div id="comp_btn" class="action-compare">
           <img src="/img/libra_yellow.svg" alt="libra">
-          Сравнить товар
+          <span>Сравнить товар</span>
         </div>
-        <div class="action-fav">
+        <div id="fav_btn" class="action-fav">
           <img src="/img/star_yellow.svg" alt="star">
-          В избранное
+          <span>В избранное</span>
         </div>
       </div>
   `;
@@ -176,4 +176,35 @@ function addProduct(product) {
 
 products.map(product => {
   addProduct(product);
+})
+
+
+const comp_btn = document.querySelectorAll('#comp_btn');
+const fav_btn = document.querySelectorAll('#fav_btn');
+const comp_badge = document.getElementById('comp_badge');
+const fav_badge = document.getElementById('fav_badge');
+let comp_counter = 0;
+let fav_counter = 0;
+
+comp_btn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.children[1].textContent === "В сравнении") {
+      return
+    }
+    comp_counter++;
+    comp_badge.style.display = 'flex';
+    comp_badge.textContent = comp_counter;
+    btn.children[1].textContent = "В сравнении";
+  })
+})
+fav_btn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.children[1].textContent === "В избранном") {
+      return
+    }
+    fav_counter++;
+    fav_badge.style.display = 'flex';
+    fav_badge.textContent = fav_counter;
+    btn.children[1].textContent = "В избранном";
+  })
 })

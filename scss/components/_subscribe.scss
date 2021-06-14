@@ -1,0 +1,34 @@
+.subscribe {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, .8);
+
+  &__container {
+    width: 378px;
+    box-sizing: border-box;
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 35vh;
+    left: 39vw;
+    background-color: $white;
+    padding: 35px 41px 37px 46px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  button {
+    width: 40%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: $orange;
+  }
+}
